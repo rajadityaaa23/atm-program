@@ -1,18 +1,16 @@
-C Application
-======================
-This is a simple C application. This application serves as a basic template for a console application using C.
+# ATM Banking System in C
 
-What does this application do?
--------------------------------
-This application prints "Hello, World!" to the console.
+A console-based ATM simulator written in C featuring PIN authentication, account balance tracking, and transaction limits.
 
-# How to run?
-You can run the application in one of the following ways:
+## Features
+- **PIN Authentication:** Verifies user PIN (`4821`) with a maximum of 3 attempts before blocking the card.
+- **Check Balance:** Displays the current account balance (starts at `Rs. 12500.00`).
+- **Withdraw & Deposit:** Supports cash withdrawals and deposits with validation.
+- **Session Transaction Limit:** Allows up to 5 transactions per login session.
 
-1. Open a terminal by going to 'View' -> 'Terminal'. Then run:
-    > `gcc main.c`
-    > `./a.out`
+## How to Run
+Compile and run the program using GCC:
 
-This will start the application.
-
-Happy coding! 🙂
+```bash
+gcc main.c -o atm
+./atm
